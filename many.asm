@@ -390,7 +390,7 @@ startraster      .byte 84
 
 
 ; $1000 - $1fff
-sid        = binary("Axel_Foley.sid"); read in the SID file as bytes
+sid        = binary("assets/Axel_Foley.sid"); read in the SID file as bytes
 offs       := sid[[$7, $6]]     ; data offset (big endian)
 load       := sid[[$9, $8]]     ; load address (big endian)
 initsid    = sid[[$b, $a]]      ; init address (big endian)
